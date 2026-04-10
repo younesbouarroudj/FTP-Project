@@ -48,10 +48,11 @@ def cmd_remove_book(library):
         print("  ⚠️  '%s'--'%s' is currently loaned by:" % (titre, auteur))
         for user in borrowers:
             print("       - [%s] %s %s" % (user.matricule, user.prenom, user.nom))
-        confirm = input("  Force delete? (y/n) : ").strip().lower()
+        confirm = input("  Force delete? (y = yes, any other key = no) : ").strip().lower()
         if confirm == "y":
             print(library.force_remove_book(titre, auteur))
             save(library)
+            return
         else:
             print("  ↩️  Deletion cancelled.")
             return

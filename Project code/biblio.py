@@ -223,8 +223,7 @@ class LoanManager:
                      if b.titre.lower() == titre.lower()
                      and b.auteur.lower() == auteur.lower()), None)
         if not book:
-            return "  ❌ [%s] '%s %s' didn't loan '%s'--'%s'." % (
-                matricule, user.prenom, user.nom, titre, auteur)
+            return "  ❌ [%s] '%s %s' didn't loan '%s'--'%s'." % (matricule, user.prenom, user.nom, titre, auteur)
 
         self.library.loans[user].remove(book)
         if not self.library.loans[user]:
