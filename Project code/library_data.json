@@ -1,0 +1,32 @@
+{
+  "name": "USTHB BIB",
+  "next_book_id": 3,
+  "books": [
+    {
+      "id": 2,
+      "titre": "python",
+      "auteur": "me",
+      "copies": 5
+    }
+  ],
+  "users": [
+    {
+      "matricule": "1919310442",
+      "prenom": "bouarroudj",
+      "nom": "younes",
+      "specialty": "phd2 rssi"
+    }
+  ],
+  "loans": [
+    {
+      "matricule": "1919310442",
+      "books": [
+        {
+          "id": 2,
+          "titre": "python",
+          "auteur": "me"
+        }
+      ]
+    }
+  ]
+}
